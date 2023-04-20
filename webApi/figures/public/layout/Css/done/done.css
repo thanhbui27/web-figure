@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif; 
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+.iconPayDone{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    padding: 100px 20px 0px 20px
+}
+.iconPayDone img{
+    transform:rotate(270deg);
+    max-width: 300px;
+
+}
+.payDone{
+    text-align: center;
+    font-size: 20px;
+}
+.thanksPay{
+    margin: 10px 0;
+}
+.thanksPay i{
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    /* text-decoration: none; */
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 20px 50px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.info-order{
+    padding: 21px;
+    margin: 32px;
+    text-align: center;
+    box-shadow: 9px 4px 4px 5px;
+}
+.form-group{
+    margin: 5px;
+}

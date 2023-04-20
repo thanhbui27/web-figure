@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+}
+#main{
+  overflow: hidden;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .login-box {
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s;
+}
+.login-container .login-box .login-card {
+  width: 100%;
+  height: 100%;
+}
+.login-card{
+  border-radius: 10px;
+  background: #ecfcfcda;
+  padding: 20px 50px;
+  width: 100%;
+}
+.title{
+    padding: 15px 0 15px 0px;
+    font-size: 18px;
+}
+
+.login-input input {
+  margin: 10px 0;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  font-size: small;
+  outline: none;
+  border: none;
+  background: transparent;
+  border:1px solid #017e4e;
+  border-radius: 10px;
+}
+.savePass input[type=checkBox]{
+    margin: 10px;
+}
+.button-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.button-login button{
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 5px;
+  background: #638686da;
+  cursor: pointer;
+}
+.login-another{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.login-another .button-facebook , .login-another .button-google{
+    width: calc(100%/2);
+    padding: 10px;
+    border-top: 1px solid #3d3d3d;
+    margin-top: 15px;
+}
+.login-another button{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button-facebook button {
+  background: #1093f4;
+}
+.button-google button{
+  background-color: rgb(248, 51, 51);
+}
+.SignUp{
+  display: flex;
+  justify-content: flex-end;
+}
+.SignUp p{
+  float: right;
+  cursor: pointer;
+}
+.login-circle{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  clip-path: circle(80% at right 120px);
+  transition: 2s;
+}
+.login-circle::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  clip-path: circle(80% at right 70px);
+}
+.login-circle::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: snow;
+  clip-path: circle(80% at right 40px);
+}
+
+.display{
+  transition-delay: 2s ;
+  display: none;
+}
+.signUp-another{
+  text-align: center;
+}
+.SignUp{
+  cursor: pointer;
+}
+.round{
+  transform: rotate3d(1, 280, 2, 180deg);
+}
+
+

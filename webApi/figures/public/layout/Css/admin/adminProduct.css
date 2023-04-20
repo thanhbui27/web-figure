@@ -1,0 +1,188 @@
+.padding-header{
+    height: 30px;
+    padding: 20px;
+}
+.title{
+    font-size: 22px;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 100px;
+    height: 5px;
+    top: 45px;
+}
+.addPRoduct{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+.inline-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; 
+    margin: 10px 0;
+   
+}
+.block-input{
+    width: calc(100%/2 - 30px);
+}
+.inline-block label{
+    width: 100%;
+}
+
+.block-input  input , .block-input select{
+    height: 35px;
+    width:calc(100% - 35px);
+    margin: 10px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #3333;
+}
+.block-input  input[type=file]{
+    line-height: 2.8;
+}
+.submit-product{
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+.submit-product button{
+    outline: none;
+    border: none;
+   padding: 10px 50px;
+   border-radius:20px ;
+   cursor: pointer;
+   transition: 0.3s;
+   transition-property: background;
+}
+.submit-product button:hover{
+    color: #fff;
+    background: #696969;
+}
+.table-product table{
+    width: 100%;
+    min-width: 1200px;
+}
+
+table tr td{
+    text-align: center;
+}
+table tr td img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.list-product-all{
+    overflow: auto;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  .page-divide {
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-action{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn-action .delete a , .btn-action .edit a , .btn-action .admin a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+  }
+  .showModel{
+    transform: translate(-50%,-50%) !important;
+}
+.add{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    z-index: 20;
+    background: #00000042;
+    padding: 20px;
+    border-radius: 20px;
+}
+.searchOrder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+  #model , #model-cate,#model-customer,#model-height,#model-price,#model-order,#model-img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+    transform: translate(50%,-50%);
+    z-index: 100;
+    overflow: auto;
+    background: rgb(0, 0, 0,0.7);
+    color: #fff;
+  }
+  .page-divide nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .pagination .active{
+    background-color: dodgerblue;
+    padding: 8px 16px;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  .pagination nav ul li a{
+    margin: 0;
+  }
+  .page-divide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+@media screen and (max-width: 700px) {
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+}

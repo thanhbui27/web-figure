@@ -1,0 +1,15 @@
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 20px;
+    padding: 25px 20px;
+}
+.container-contact{
+    padding: 10px 20px;
+}
+.contact-home h2 a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
